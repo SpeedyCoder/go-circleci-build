@@ -29,5 +29,3 @@ RUN mkdir golangci && cd golangci && git clone https://github.com/golangci/golan
     cd golangci-lint && git reset --hard $(git rev-list --tags --max-count=1) && \
     go install github.com/golangci/golangci-lint/cmd/golangci-lint && \
     cd ../../ && rm -rf golangci
-
-USER circleci
